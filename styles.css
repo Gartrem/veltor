@@ -61,3 +61,27 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:25px 0 90px;background
   .hero__logo{width:310px!important}
   .hero__visual::before{width:330px;height:330px}
 }
+
+/* Remove the black image rectangle while preserving the exact VELTOR artwork */
+.brand__logo,
+.hero__logo,
+.contact-panel img{
+  mix-blend-mode:screen!important;
+  background:transparent!important;
+}
+.hero__logo{
+  opacity:1!important;
+  filter:drop-shadow(0 30px 55px rgba(0,0,0,.48)) drop-shadow(0 0 22px rgba(239,35,45,.10))!important;
+}
+.hero__visual{
+  background:transparent!important;
+}
+.hero__visual::after{
+  content:"";
+  position:absolute;
+  inset:8% 4%;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(239,35,45,.10),rgba(239,35,45,.025) 48%,transparent 70%);
+  pointer-events:none;
+  z-index:0;
+}
