@@ -422,3 +422,73 @@ footer{padding:28px 0;border-top:1px solid #24272b;background:#050607}.footer__i
     transform:rotate(-3deg)!important;
   }
 }
+
+
+/* === VELTOR promo image continuity v21 ===
+   Extend the promo artwork under the coupon so the image no longer looks cut off. */
+.promo{
+  isolation:isolate;
+  background:
+    radial-gradient(circle at 46% 88%,rgba(255,24,36,.30),transparent 28%),
+    linear-gradient(90deg,#15090a 0%,#100708 38%,#07090c 100%)!important;
+}
+.promo:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,
+      rgba(17,7,8,.98) 0%,
+      rgba(17,7,8,.91) 28%,
+      rgba(10,8,10,.56) 43%,
+      rgba(6,7,9,.10) 60%,
+      rgba(6,7,9,.10) 100%);
+}
+.promo:after{
+  right:0!important;
+  left:auto!important;
+  top:0!important;
+  width:72%!important;
+  height:100%!important;
+  background:
+    url('assets/hero-premium-v18.webp') center 52% / cover no-repeat!important;
+  opacity:.92!important;
+  filter:saturate(1.02) contrast(1.14) brightness(.72)!important;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 8%,#000 24%,#000 100%)!important;
+  mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 8%,#000 24%,#000 100%)!important;
+}
+.promo__copy{
+  position:relative;
+  z-index:4!important;
+}
+.coupon{
+  z-index:7!important;
+}
+.coupon__inner{
+  background:
+    linear-gradient(180deg,rgba(20,21,26,.92) 0%,rgba(9,10,13,.95) 100%)!important;
+  backdrop-filter:blur(3px);
+  -webkit-backdrop-filter:blur(3px);
+}
+
+@media(max-width:980px){
+  .promo:after{width:78%!important}
+}
+@media(max-width:640px){
+  .promo:before{
+    background:linear-gradient(180deg,
+      rgba(8,9,12,.22) 0%,
+      rgba(8,9,12,.48) 46%,
+      rgba(8,9,12,.82) 100%);
+  }
+  .promo:after{
+    right:0!important;
+    width:100%!important;
+    opacity:.62!important;
+    background-position:58% center!important;
+    -webkit-mask-image:linear-gradient(180deg,#000 0%,#000 72%,rgba(0,0,0,.5) 100%)!important;
+    mask-image:linear-gradient(180deg,#000 0%,#000 72%,rgba(0,0,0,.5) 100%)!important;
+  }
+}
