@@ -1162,3 +1162,20 @@ footer{padding:28px 0;border-top:1px solid #24272b;background:#050607}.footer__i
     top:70%;
   }
 }
+
+
+/* === VELTOR transparent symbol logo v32 === */
+.brand img{
+  width:52px!important;
+  height:52px!important;
+  object-fit:contain!important;
+  mix-blend-mode:normal!important;
+  border-radius:0!important;
+  background:transparent!important;
+  filter:drop-shadow(0 6px 12px rgba(0,0,0,.45)) drop-shadow(0 0 8px rgba(255,24,36,.08))!important;
+}
+footer .brand img{
+  mix-blend-mode:normal!important;
+  border-radius:0!important;
+  background:transparent!important;
+}
