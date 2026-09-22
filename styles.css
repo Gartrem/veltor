@@ -115,3 +115,59 @@ footer{padding:28px 0;border-top:1px solid #24272b;background:#050607}.footer__i
 @media(max-width:640px){
   .hero__media{background-position:58% center!important}
 }
+
+/* === VELTOR PHOTO PACK v16 ===
+   Real black/red automotive imagery matched to the approved reference. */
+.hero__media{
+  background-image:
+    linear-gradient(90deg,#050607 0%,rgba(5,6,7,.96) 12%,rgba(5,6,7,.28) 44%,rgba(5,6,7,.04) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.15)),
+    url('https://tiredepotmtl.com/cdn/shop/files/a-cinematic-night-scene-inside-a-tire-warehouse-or-auto-garage-stacks-of-tires-in-the-background-concrete-floor-with-reflections-moody-red-accent-lighting-soft-haze-and-contrast-dark.png?v=1761554984&width=2000')!important;
+  background-size:cover!important;
+  background-position:center 56%!important;
+  filter:saturate(.9) contrast(1.18) brightness(.74)!important;
+}
+.service-card__photo{
+  background-size:cover!important;
+  filter:saturate(.88) contrast(1.15) brightness(.72)!important;
+}
+.service-card--1 .service-card__photo{
+  background-image:
+    linear-gradient(180deg,transparent 42%,#0a0c0f 100%),
+    url('https://automall.ru/api/image/47eb90c5-eb00-4909-a349-7de21552de8f?fit=crop&fm=jpeg&h=900&t=20260218054636&w=1400')!important;
+  background-position:center 48%!important;
+}
+.service-card--2 .service-card__photo{
+  background-image:
+    linear-gradient(180deg,transparent 42%,#0a0c0f 100%),
+    url('https://www.area.at/assets/images/n/mercedes-schneider-11-px46drt5r4vhvhf.jpg')!important;
+  background-position:center 54%!important;
+}
+.service-card--3 .service-card__photo{
+  background-image:
+    linear-gradient(180deg,transparent 42%,#0a0c0f 100%),
+    url('https://www.area.at/assets/images/n/mercedes-schneider-11-px46drt5r4vhvhf.jpg')!important;
+  background-position:60% 54%!important;
+}
+.service-card--4 .service-card__photo{
+  background-image:
+    linear-gradient(180deg,transparent 42%,#0a0c0f 100%),
+    url('https://tiredepotmtl.com/cdn/shop/files/a-cinematic-night-scene-inside-a-tire-warehouse-or-auto-garage-stacks-of-tires-in-the-background-concrete-floor-with-reflections-moody-red-accent-lighting-soft-haze-and-contrast-dark.png?v=1761554984&width=1200')!important;
+  background-position:20% 48%!important;
+}
+.promo:after{
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.15),rgba(0,0,0,.02)),
+    url('https://tiredepotmtl.com/cdn/shop/files/a-cinematic-night-scene-inside-a-tire-warehouse-or-auto-garage-stacks-of-tires-in-the-background-concrete-floor-with-reflections-moody-red-accent-lighting-soft-haze-and-contrast-dark.png?v=1761554984&width=1600') center/cover no-repeat!important;
+  opacity:.70!important;
+  filter:saturate(.92) contrast(1.18) brightness(.62)!important;
+}
+.why__visual{
+  background:
+    linear-gradient(90deg,#050607 0%,rgba(5,6,7,.42) 33%,transparent 100%),
+    url('https://www.area.at/assets/images/n/mercedes-schneider-11-px46drt5r4vhvhf.jpg') center/cover no-repeat!important;
+  filter:saturate(.75) contrast(1.25) brightness(.58)!important;
+}
+@media(max-width:640px){
+  .hero__media{background-position:62% center!important}
+}
