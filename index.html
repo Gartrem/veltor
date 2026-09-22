@@ -7,7 +7,8 @@
   <meta name="description" content="ВЕЛТОР — шиномонтаж и автосервис в Новосибирске. Проспект Дзержинского, 144а.">
   <title>ВЕЛТОР — шиномонтаж высокого уровня</title>
   <link rel="icon" href="assets/logo.webp?v=12" type="image/webp">
-  <link rel="stylesheet" href="styles.css?v=28">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css?v=29">
 </head>
 <body>
 <header class="topbar" id="top">
@@ -157,7 +158,7 @@
 </section>
 
 <section class="contacts" id="contacts">
-  <div class="map-bg" aria-hidden="true"><div class="map-pin">●<b>ВЕЛТОР</b><span>Мы здесь!</span></div></div>
+  <div class="map-bg" id="veltor-map" role="region" aria-label="Карта: ВЕЛТОР, Новосибирск, проспект Дзержинского, 144а"></div>
   <div class="container contacts__inner">
     <div class="contacts__copy reveal">
       <h2>Как нас найти</h2>
@@ -178,6 +179,7 @@
   </div>
 </footer>
 <div class="mobile-cta"><a href="tel:+79538833660">Записаться · 8 953 883 36 60</a></div>
-<script src="script.js?v=12"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js?v=29"></script>
 </body>
 </html>
