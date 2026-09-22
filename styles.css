@@ -1257,3 +1257,80 @@ footer .brand img{
     background-position:center,58% center!important;
   }
 }
+
+
+/* === VELTOR hero emergency restore v41 ===
+   The v39 file is corrupted; use the last verified valid hero image and lock the proven layout. */
+.hero{
+  position:relative!important;
+  min-height:660px!important;
+  overflow:hidden!important;
+  background:#050607!important;
+}
+.hero__media{
+  position:absolute!important;
+  z-index:0!important;
+  top:0!important;
+  right:0!important;
+  bottom:0!important;
+  left:auto!important;
+  width:72%!important;
+  height:100%!important;
+  display:block!important;
+  opacity:1!important;
+  background-color:#050607!important;
+  background-image:
+    linear-gradient(90deg,
+      #050607 0%,
+      rgba(5,6,7,.98) 10%,
+      rgba(5,6,7,.72) 28%,
+      rgba(5,6,7,.28) 46%,
+      rgba(5,6,7,.05) 64%,
+      rgba(5,6,7,0) 82%),
+    url('assets/hero-premium-v18.webp')!important;
+  background-size:100% 100%,cover!important;
+  background-position:left center,58% center!important;
+  background-repeat:no-repeat!important;
+  filter:none!important;
+}
+.hero__media:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 66% 47%,rgba(255,26,38,.08),transparent 38%),
+    linear-gradient(180deg,rgba(0,0,0,.03),rgba(0,0,0,.12));
+}
+.hero__inner{
+  position:relative!important;
+  z-index:2!important;
+}
+.hero__copy{
+  position:relative!important;
+  z-index:3!important;
+}
+.hero__slogan,
+.hero__benefits{
+  z-index:4!important;
+}
+
+@media(max-width:980px){
+  .hero__media{
+    width:100%!important;
+    background-position:left center,62% center!important;
+  }
+}
+@media(max-width:640px){
+  .hero{
+    min-height:auto!important;
+  }
+  .hero__media{
+    width:100%!important;
+    background-image:
+      linear-gradient(180deg,rgba(5,6,7,.28) 0%,rgba(5,6,7,.54) 46%,#050607 94%),
+      url('assets/hero-premium-v18.webp')!important;
+    background-size:100% 100%,cover!important;
+    background-position:center,58% center!important;
+  }
+}
