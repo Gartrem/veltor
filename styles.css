@@ -265,3 +265,22 @@ footer{padding:28px 0;border-top:1px solid #24272b;background:#050607}.footer__i
     linear-gradient(90deg,#050607 0%,rgba(5,6,7,.42) 32%,transparent 100%),
     url('assets/service-tire-v18.webp') center/cover no-repeat!important;
 }
+
+
+/* === VELTOR distinct generated service images v19 === */
+.service-card--1 .service-card__photo{
+  background-image:linear-gradient(180deg,transparent 42%,#0a0c0f 100%),url('assets/service-mount-v19.webp')!important;
+  background-position:center 52%!important;
+}
+.service-card--2 .service-card__photo{
+  background-image:linear-gradient(180deg,transparent 42%,#0a0c0f 100%),url('assets/service-balance-v19.webp')!important;
+  background-position:center 50%!important;
+}
+.service-card--3 .service-card__photo{
+  background-image:linear-gradient(180deg,transparent 42%,#0a0c0f 100%),url('assets/service-alignment-v19.webp')!important;
+  background-position:center 52%!important;
+}
+.service-card--4 .service-card__photo{
+  background-image:linear-gradient(180deg,transparent 42%,#0a0c0f 100%),url('assets/service-storage-v19.webp')!important;
+  background-position:center 48%!important;
+}
