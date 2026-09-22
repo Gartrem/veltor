@@ -706,3 +706,32 @@ footer{padding:28px 0;border-top:1px solid #24272b;background:#050607}.footer__i
   .hero__benefits b{font-size:10px}
   .hero__benefits span{font-size:7px}
 }
+
+
+/* === VELTOR semantic hero benefit icons v24 === */
+.hero__benefits i{
+  width:30px!important;
+  height:30px!important;
+  color:#ff2634!important;
+  font-size:0!important;
+}
+.hero__benefits i svg{
+  width:24px;
+  height:24px;
+  display:block;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  vector-effect:non-scaling-stroke;
+}
+@media(max-width:640px){
+  .hero__benefits i{
+    width:24px!important;
+    height:24px!important;
+  }
+  .hero__benefits i svg{
+    width:20px;
+    height:20px;
+  }
+}
