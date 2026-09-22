@@ -230,3 +230,38 @@ footer{padding:28px 0;border-top:1px solid #24272b;background:#050607}.footer__i
 @media(max-width:640px){
   .hero__media{background-position:58% center!important}
 }
+
+
+/* === VELTOR image hotfix v18 ===
+   New file names bypass cached/corrupted assets from previous deploys. */
+.hero__media{
+  background-image:
+    linear-gradient(90deg,#050607 0%,rgba(5,6,7,.96) 12%,rgba(5,6,7,.28) 44%,rgba(5,6,7,.04) 100%),
+    url('assets/hero-premium-v18.webp')!important;
+}
+.service-card--1 .service-card__photo,
+.service-card--2 .service-card__photo{
+  background-image:
+    linear-gradient(180deg,transparent 42%,#0a0c0f 100%),
+    url('assets/service-mount-v18.webp')!important;
+}
+.service-card--3 .service-card__photo{
+  background-image:
+    linear-gradient(180deg,transparent 42%,#0a0c0f 100%),
+    url('assets/hero-premium-v18.webp')!important;
+}
+.service-card--4 .service-card__photo{
+  background-image:
+    linear-gradient(180deg,transparent 42%,#0a0c0f 100%),
+    url('assets/service-tire-v18.webp')!important;
+}
+.promo:after{
+  background:
+    linear-gradient(90deg,rgba(8,5,5,.05),rgba(0,0,0,.02)),
+    url('assets/service-tire-v18.webp') center/cover no-repeat!important;
+}
+.why__visual{
+  background:
+    linear-gradient(90deg,#050607 0%,rgba(5,6,7,.42) 32%,transparent 100%),
+    url('assets/service-tire-v18.webp') center/cover no-repeat!important;
+}
