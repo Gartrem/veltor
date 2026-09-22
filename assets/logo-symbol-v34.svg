@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 310" role="img" aria-label="ВЕЛТОР">
+<defs>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f7f7f7"/>
+    <stop offset=".18" stop-color="#8e9298"/>
+    <stop offset=".34" stop-color="#ffffff"/>
+    <stop offset=".56" stop-color="#555960"/>
+    <stop offset=".78" stop-color="#f4f4f4"/>
+    <stop offset="1" stop-color="#777b81"/>
+  </linearGradient>
+  <linearGradient id="metalDark" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#4e5359"/>
+    <stop offset=".32" stop-color="#fbfbfb"/>
+    <stop offset=".60" stop-color="#8a8f95"/>
+    <stop offset="1" stop-color="#e7e7e7"/>
+  </linearGradient>
+  <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ff2634"/>
+    <stop offset=".55" stop-color="#e60014"/>
+    <stop offset="1" stop-color="#8e000c"/>
+  </linearGradient>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000" flood-opacity=".72"/>
+  </filter>
+  <filter id="redGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ff1426" flood-opacity=".55"/>
+  </filter>
+</defs>
+<g filter="url(#shadow)">
+  <path d="M54 112C82 52 150 22 220 35c25 5 47 15 65 30l-23 26c-22-17-47-26-76-26-41 0-78 16-106 47Z"
+        fill="url(#metalDark)" stroke="#14171b" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M186 50c35 2 69 16 96 42 17 16 28 33 35 52l-35 39c-8-30-25-56-53-75-15-10-31-17-49-20Z"
+        fill="url(#red)" stroke="#ff4651" stroke-width="2.5" stroke-linejoin="round" filter="url(#redGlow)"/>
+  <path d="M59 134c-10 27-12 56-5 84 8 35 28 64 57 83l28-29c-22-15-38-36-44-62-5-20-4-39 2-58Z"
+        fill="url(#metalDark)" stroke="#14171b" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M96 112L160 253 277 113 235 112 164 202 126 112Z"
+        fill="url(#metal)" stroke="#111317" stroke-width="7" stroke-linejoin="miter"/>
+  <path d="M102 118L160 242 259 121" fill="none" stroke="#ffffff" stroke-opacity=".46" stroke-width="2"/>
+  <path d="M121 112L164 202 235 112" fill="none" stroke="#111317" stroke-opacity=".58" stroke-width="3"/>
+  <path d="M109 287c30 14 67 18 102 8 41-11 73-39 91-76l-37-9c-14 25-37 43-66 51-20 5-40 5-58-1Z"
+        fill="url(#metalDark)" stroke="#14171b" stroke-width="4" stroke-linejoin="round"/>
+</g>
+</svg>
