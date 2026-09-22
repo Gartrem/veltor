@@ -20,3 +20,44 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:25px 0 90px;background
 @media(max-width:660px){
   .container{width:min(calc(100% - 28px),var(--max))}.header__inner{height:72px}.brand__logo{width:40px;height:40px}.nav{top:72px}.hero{padding-top:96px;min-height:auto}.hero__visual{min-height:330px}.hero__logo{width:310px}.orbit--a{width:330px;height:330px}.orbit--b{width:260px;height:260px}.badge{bottom:10px;right:0}.hero h1{font-size:48px}.lead{font-size:16px}.hero__actions,.contact-actions{flex-direction:column;align-items:stretch}.stats{display:grid;grid-template-columns:repeat(3,1fr)}.stats div{margin-right:10px;padding-right:10px}.stats strong{font-size:19px}.stats span{font-size:8px}.section{padding:82px 0}.section-head h2,.promo h2,.contacts h2{font-size:41px}.service-grid{grid-template-columns:1fr}.card--wide{grid-column:auto}.card{min-height:260px;padding:30px}.promo{padding:80px 0}.promo__visual{height:320px}.wheel{width:250px;height:250px}.vmark{font-size:150px}.principles{grid-template-columns:1fr}.principles>div{border-right:0!important;border-bottom:1px solid var(--line)}.principles>div:last-child{border-bottom:0}.contact-panel{min-height:320px}.contact-panel img{width:210px}.footer__inner{flex-direction:column;gap:9px}.mobile-cta{display:block}
 }
+/* VELTOR premium logo treatment */
+.brand__logo,
+.hero__logo,
+.contact-panel img{
+  background:transparent!important;
+  object-fit:contain;
+}
+.brand__logo{
+  border-radius:0!important;
+  filter:drop-shadow(0 8px 18px rgba(0,0,0,.42));
+}
+.hero__visual{
+  isolation:isolate;
+}
+.hero__visual::before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(239,35,45,.14) 0%,rgba(239,35,45,.045) 38%,transparent 70%);
+  filter:blur(8px);
+  z-index:0;
+}
+.hero__logo{
+  position:relative;
+  z-index:3;
+  width:min(545px,92%)!important;
+  height:auto!important;
+  border-radius:0!important;
+  filter:drop-shadow(0 30px 54px rgba(0,0,0,.56)) drop-shadow(0 0 20px rgba(239,35,45,.07));
+}
+.contact-panel img{
+  border-radius:0!important;
+  mix-blend-mode:normal!important;
+  filter:drop-shadow(0 18px 35px rgba(0,0,0,.48));
+}
+@media(max-width:660px){
+  .hero__logo{width:310px!important}
+  .hero__visual::before{width:330px;height:330px}
+}
