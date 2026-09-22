@@ -874,3 +874,54 @@ footer{padding:28px 0;border-top:1px solid #24272b;background:#050607}.footer__i
     transform:rotate(4.2deg)!important;
   }
 }
+
+
+/* === VELTOR ticker spacing fix v28 ===
+   Keep the diagonal ribbons as an overlay, but reserve clean space so they never cover content. */
+.diagonal-tickers{
+  position:relative!important;
+  z-index:20!important;
+  height:0!important;
+  min-height:0!important;
+  overflow:visible!important;
+  background:transparent!important;
+  border:0!important;
+  pointer-events:none;
+}
+.ticker-ribbon{
+  z-index:21!important;
+}
+.ticker-ribbon--red{
+  top:18px!important;
+  transform:rotate(-3.2deg)!important;
+}
+.ticker-ribbon--dark{
+  top:60px!important;
+  transform:rotate(3deg)!important;
+}
+.services{
+  position:relative!important;
+  z-index:1!important;
+  padding-top:165px!important;
+}
+.services .container{
+  position:relative!important;
+  z-index:2!important;
+}
+
+@media(max-width:980px){
+  .ticker-ribbon--red{top:16px!important}
+  .ticker-ribbon--dark{top:56px!important}
+  .services{padding-top:150px!important}
+}
+@media(max-width:760px){
+  .ticker-ribbon--red{
+    top:12px!important;
+    transform:rotate(-4.3deg)!important;
+  }
+  .ticker-ribbon--dark{
+    top:48px!important;
+    transform:rotate(4deg)!important;
+  }
+  .services{padding-top:128px!important}
+}
