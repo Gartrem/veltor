@@ -818,3 +818,59 @@ footer{padding:28px 0;border-top:1px solid #24272b;background:#050607}.footer__i
     background-position:center, center top!important;
   }
 }
+
+
+/* === VELTOR diagonal tickers overlay v27 ===
+   Float the ribbons over the hero/services transition instead of giving them a separate black section. */
+.diagonal-tickers{
+  position:relative!important;
+  z-index:20!important;
+  height:0!important;
+  min-height:0!important;
+  overflow:visible!important;
+  background:transparent!important;
+  border:0!important;
+  pointer-events:none;
+}
+.ticker-ribbon{
+  left:-8%!important;
+  width:116%!important;
+  z-index:21;
+  box-shadow:0 12px 30px rgba(0,0,0,.38)!important;
+}
+.ticker-ribbon--red{
+  top:-30px!important;
+  transform:rotate(-3.6deg)!important;
+}
+.ticker-ribbon--dark{
+  top:16px!important;
+  transform:rotate(3.1deg)!important;
+  background:rgba(8,10,13,.92)!important;
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+}
+.services{
+  position:relative;
+  z-index:1;
+}
+.services .container{
+  position:relative;
+  z-index:2;
+}
+@media(max-width:760px){
+  .diagonal-tickers{
+    height:0!important;
+  }
+  .ticker-ribbon{
+    left:-20%!important;
+    width:140%!important;
+  }
+  .ticker-ribbon--red{
+    top:-24px!important;
+    transform:rotate(-5deg)!important;
+  }
+  .ticker-ribbon--dark{
+    top:15px!important;
+    transform:rotate(4.2deg)!important;
+  }
+}
