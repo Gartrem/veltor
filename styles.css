@@ -1232,3 +1232,68 @@ footer .brand img{
     background-position:center, center top!important;
   }
 }
+
+
+/* === VELTOR high-resolution hero image v39 ===
+   Use the original 1672x941 generated artwork at high quality and fit it without cropping. */
+.hero{
+  position:relative!important;
+  overflow:hidden!important;
+  background:#050607!important;
+}
+.hero__media{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  background-image:
+    linear-gradient(90deg,
+      #050607 0%,
+      rgba(5,6,7,.99) 15%,
+      rgba(5,6,7,.90) 27%,
+      rgba(5,6,7,.56) 40%,
+      rgba(5,6,7,.18) 53%,
+      rgba(5,6,7,.02) 68%,
+      rgba(5,6,7,0) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.08)),
+    url('assets/hero-premium-v39.webp')!important;
+  background-size:100% 100%,100% 100%,auto 100%!important;
+  background-position:left center,left center,right center!important;
+  background-repeat:no-repeat!important;
+  filter:saturate(1.03) contrast(1.07) brightness(.92)!important;
+  image-rendering:auto!important;
+}
+.hero__inner,
+.hero__copy,
+.hero__slogan,
+.hero__benefits{
+  position:relative;
+  z-index:3;
+}
+
+@media(min-width:1500px){
+  .hero__media{
+    background-size:100% 100%,100% 100%,auto 100%!important;
+    background-position:left center,left center,right center!important;
+  }
+}
+@media(max-width:980px){
+  .hero__media{
+    background-size:100% 100%,100% 100%,auto 100%!important;
+    background-position:left center,left center,68% center!important;
+  }
+}
+@media(max-width:640px){
+  .hero__media{
+    background-image:
+      linear-gradient(180deg,
+        rgba(5,6,7,.25) 0%,
+        rgba(5,6,7,.46) 42%,
+        rgba(5,6,7,.88) 78%,
+        #050607 100%),
+      url('assets/hero-premium-v39.webp')!important;
+    background-size:100% 100%,cover!important;
+    background-position:center,58% center!important;
+    filter:saturate(1.02) contrast(1.06) brightness(.86)!important;
+  }
+}
