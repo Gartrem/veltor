@@ -1,0 +1,28 @@
+name: Export site archive
+
+on:
+  push:
+    paths:
+      - '.github/workflows/export-site.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build ZIP
+        run: |
+          zip -r veltor-site.zip . -x '.git/*' 'veltor-site.zip'
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: veltor-site
+          path: veltor-site.zip
+          if-no-files-found: error
+          retention-days: 1
